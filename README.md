@@ -10,20 +10,13 @@ Title: Geographic differences in color pattern and female interest provide an ad
 
 Brief abstract: Understanding the maintenance of genetic variation in wild populations is challenging because the evolutionary processes that shape variation do not act independently. Negative frequency-dependent selection (NFDS), in which rare genotypes have a fitness advantage over common genotypes, can maintain high levels of heritable trait variation. One potential outcome of NFDS is an increase in the effective migration rate, as migrants often carry rare phenotypes that may be favored in new environments. The ecological mechanisms underlying a “rare migrant advantage” are largely unknown. Using Trinidadian guppies (Poecilia reticulata), we evaluated whether migrant males are likely to exhibit unfamiliar phenotypes and whether they gain behavioral advantages during post-dispersal mating interactions. We quantified geographic variation in whole-color patterns of 566 wild male guppies and paired these data with behavioral assays to measure female interest in migrant males with unfamiliar color patterns. Male color patterns differed over small geographic spatial scales, and females were more interested in migrant males compared to resident males. However, female interest did not increase with quantitative color pattern rarity. Our findings highlight a potential migrant-associated advantage consistent with NFDS, while revealing that the traits underlying this advantage may be more complex than quantitative color pattern rarity alone. 
 
-Originators: 
-- Alexa G. Guerrera, Michigan State University (guerr143@msu.edu)
-- Michael P. Hogan, University of Michigan
+Originators: Alexa G. Guerrera, Michigan State University (guerr143@msu.edu), Michael P. Hogan, University of Michigan
 
-Dates of data collection: 
-- February- March 2023
+Dates of data collection: February- March 2023
 
-Geographic Location(s) of data collection
-- Northern Range Mountains, Trinidad
+Geographic Location(s) of data collection: Northern Range Mountains, Trinidad
 
-Funding sources:
-This work was supported by the Lewis and Clark Grant Fund for Exploration and Field Research (2023), the Animal
-Behavior Society Student Research Grant (2023), a National Science Foundation Grant DEB-2410082 to AGG, DEB-2409901 awarded to MPH, and DEB
-1740466 to K. Hughes (Florida State University, USA).
+Funding sources: This work was supported by the Lewis and Clark Grant Fund for Exploration and Field Research (2023), the Animal Behavior Society Student Research Grant (2023), a National Science Foundation Grant DEB-2410082 to AGG, DEB-2409901 awarded to MPH, and DEB 1740466 to K. Hughes (Florida State University, USA).
 
 ## ACCESS INFORMATION
 Licenses/restrictions placed on the data or code
