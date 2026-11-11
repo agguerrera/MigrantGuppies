@@ -1,7 +1,7 @@
 # MigrantGuppies
 
 ## GENERAL INFORMATION
-This README.txt file was updated on 11/9/2026 
+This README file was updated on 11/9/2026 
 
 Paper associated with this archive:
 This work is currently under review at the American Naturalist.
