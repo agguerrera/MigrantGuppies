@@ -6,11 +6,14 @@ library(tidyr)
 # Necessary input files:
 # rgb_uv_pool5DT1PR.rds
 
+#WARNING: This clears your global working environment to start fresh between scripts
+rm(list = ls())
+
 #Read in color data 
 rgb_uv_pool5DT1PR <- readRDS(here::here("data", "rgb_uv_pool5DT1PR.rds"))
 
 # Define color columns
-color_cols <- 9:28833
+color_cols <- 9:28832
 
 # Extract full color matrix
 dat5DT1PR_raw <- rgb_uv_pool5DT1PR[, color_cols]

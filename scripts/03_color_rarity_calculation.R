@@ -24,6 +24,8 @@ library(here)
 # Migrant male pool-level rarity is then computed separately by adding an individual migrant's 
 # color vector to the color matrix of the focal resident pool.
 
+#WARNING: This clears your global working environment to start fresh between scripts
+rm(list = ls())
 
 colors <- readRDS(here::here("data", "rgb_uv_pool5DT1PR.rds"))
 pool_info <- read.csv(here("data", "pool_info.csv")) %>% mutate(trial = as.integer(trial))

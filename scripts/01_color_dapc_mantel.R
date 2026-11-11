@@ -13,6 +13,9 @@ library(here)
 # rgb_uv_pool5DT1PR.rds
 # xy5DT1PR.csv
 
+#WARNING: This clears your global working environment to start fresh between scripts
+rm(list = ls())
+
 #Read in color data and xy coordinates
 rgb_uv_pool5DT1PR <- readRDS(here::here("data", "rgb_uv_pool5DT1PR.rds"))
 xy5DT1PR <- read.csv(here("data", "xy5DT1PR.csv"))

@@ -20,6 +20,8 @@ library(here)
 # focal_behaviors.csv : behavior information
 # annotated-behaviors.csv : time-stamped behaviors for supplemental
 
+#WARNING: This clears your global working environment to start fresh between scripts
+rm(list = ls())
 
 # ============================================================
 # BEHAVIORAL STATISTICS
