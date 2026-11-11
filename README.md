@@ -31,7 +31,7 @@ All analyses were conducted in R. The repository contains the R scripts, input d
 2. Extract the ZIP file to a local directory.
 3. Open `MigrantGuppies.Rproj` in RStudio.
 4. Install the required R packages listed at the beginning of the analysis scripts.
-5. Each script can be run independently using the input files specified in its description below and within the scripts themselves. Scripts are numbered to reflect the general analytical workflow rather than a required execution order.
+5. Each script can be run independently using the input files specified in its description below or within the scripts themselves. Scripts are numbered to reflect the general analytical workflow rather than a required execution order.
 
 ### Project structure
 
