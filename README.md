@@ -26,8 +26,9 @@ All analyses were conducted in RStudio. The repository contains the R scripts, i
 1. Download the repository by selecting **Code → Download ZIP** on GitHub.
 2. Extract the ZIP file to a local directory.
 3. Open `MigrantGuppies.Rproj` in RStudio.
-4. Install the required R packages listed at the beginning of the analysis scripts.
-5. Each script can be run independently using the input files specified in its description below or within the scripts themselves. Scripts are numbered to reflect the general analytical workflow rather than a required execution order.
+4. Click on "scripts" folder in Files.
+5. Install the required R packages listed at the beginning of the analysis scripts.
+6. Each script can be run independently using the input files specified in its description below or within the scripts themselves. Scripts are numbered to reflect the general analytical workflow rather than a required execution order.
 
 ### Project structure
 
