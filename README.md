@@ -44,7 +44,7 @@ All file paths are specified relative to the project directory using the `here` 
 This data repository consist of six data files, four R scripts, an RStudio project file, and a README document. Files are described below.
 
 ### Data files and variables
-1. rgb_uv_pool5DT1PR.csv
+1. rgb_uv_pool5DT1PR.rds
           ID: Unique male identifier
           StreamLetter: Unique stream and pool identifier
           PhotoID: Full photo ID
@@ -137,16 +137,16 @@ This data repository consist of six data files, four R scripts, an RStudio proje
         time_since_follow: the amount of time passed since following stopped and behavior occured 
 
 ### Code script description
-1. 01_color_dapc_mantel.R: 
+1. 01_color_dapc_mantel.R
 R script used to run Discriminant Analysis of Principal Components, PERMANOVAs, and Mantel tests. This code also calculates the proportion of orange and black coloration present on each male. Input files needed to run code: rgb_uv_pool5DT1PR.csv and xy5DT1PR.csv. 
     
-3. 02_color_variance.R: 
+3. 02_color_variance.R
 R script used to compute color pattern variance in all three sampled tributaries based on the trace of the covariance matrix. Input file needed to run code: rgb_uv_pool5DT1PR.csv. 
     
-5. 03_color_rarity_calculation.R:
+3. 03_color_rarity_calculation.R
 R script used to calculate trial- and pool-level rarity metrics. Trial rarity is calculated based on the Euclidean distance to the trial centroid (mean). Trial centroid includes color pattern vectors of all experimental males). Pool rarity is calculated based on the Euclidean distance to the mean focal pool centroid. Pool centroid includes color pattern vectors of all males found in natural pool, but excludes migrant males used in corresponding trials). Migrant male pool rarity scores are calculated separately by adding each individual migrant's color vector to the color matrix of the focal resident pool. This avoids migrant males tested with individuals from the same focal pool being included in the pool mean. Input files required: rgb_uv_pool5DT1PR.csv and pool_info.csv
         
-6. 04_statistics.R
+4. 04_statistics.R
 R script used to compute all statistics. Four models are assessed: (1) female interest model with categorical predictor of male type (resident common, resident rare, migrant unfamiliar), (2) female interest with categorical predictor of migrant status (migrant, resident) and continuous predictor of trial-level rarity metrics, (3) female interest with categorical predictor of migrant status (migrant, resident) and continuous predictor of pool-level rarity metrics, and (4) male-male competition model with categorical predictor of male type. Input files required: combined_rarity.csv, focal_behaviors.csv, annotated_behaviors.csv
    
 ## SOFTWARE VERSIONS
