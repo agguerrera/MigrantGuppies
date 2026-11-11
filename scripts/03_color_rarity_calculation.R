@@ -173,10 +173,6 @@ combined_rarity <- trial_males %>%
     PoolRarity = Pool.ED
   )
 
-# Export dataset
-
-write.csv(combined_rarity, "~/Desktop/Trinidad-Migrant-MS/AmNat/Dryad/combined_rarity.csv", row.names = FALSE)
-
 # Comparisons across male types.
 combined_rarity <- combined_rarity %>%
   mutate(male_type = factor(male_type, levels = c("common", "rare", "migrant")))
