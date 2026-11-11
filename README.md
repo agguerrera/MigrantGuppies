@@ -2,6 +2,7 @@
 
 GENERAL INFORMATION
 This README.txt file was updated on 11/9/2026 
+
 A. Paper associated with this archive
 Citation: This work is under review at the American Naturalist. 
 Title: Geographic differences in color pattern and female interest provide an advantage for wild migrant male guppies (Poecilia reticulata)
