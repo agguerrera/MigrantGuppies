@@ -4,10 +4,10 @@ library(dplyr)
 library(tidyr)
 
 # Necessary input files:
-# rgb_uv_pool5DT1PR.csv
+# rgb_uv_pool5DT1PR.rds
 
 #Read in color data 
-rgb_uv_pool5DT1PR <- read.csv(here("data", "rgb_uv_pool5DT1PR.csv"))
+rgb_uv_pool5DT1PR <- readRDS(here::here("data", "rgb_uv_pool5DT1PR.rds"))
 
 # Define color columns
 color_cols <- 9:28833

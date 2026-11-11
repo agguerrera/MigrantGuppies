@@ -9,7 +9,7 @@ library(car)
 library(here)
 
 # Necessary input files:
-# rgb_uv_pool5DT1PR.csv : contains Colormesh data
+# rgb_uv_pool5DT1PR.rds : contains Colormesh data
 # pool_info.csv : contain trial- and pool-specific information for each male
 
 #######################################
@@ -25,7 +25,7 @@ library(here)
 # color vector to the color matrix of the focal resident pool.
 
 
-colors <- read.csv(here("data", "rgb_uv_pool5DT1PR.csv"))
+colors <- readRDS(here::here("data", "rgb_uv_pool5DT1PR.rds"))
 pool_info <- read.csv(here("data", "pool_info.csv")) %>% mutate(trial = as.integer(trial))
 
 # We first make a variable that stores all RGB and UV color measurements for all males

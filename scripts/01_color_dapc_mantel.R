@@ -10,11 +10,11 @@ library(purrr)
 library(here)
 
 # Necessary input files:
-# rgb_uv_pool5DT1PR.csv
+# rgb_uv_pool5DT1PR.rds
 # xy5DT1PR.csv
 
 #Read in color data and xy coordinates
-rgb_uv_pool5DT1PR <- read.csv(here("data", "rgb_uv_pool5DT1PR.csv"))
+rgb_uv_pool5DT1PR <- readRDS(here::here("data", "rgb_uv_pool5DT1PR.rds"))
 xy5DT1PR <- read.csv(here("data", "xy5DT1PR.csv"))
 
 ############################################
