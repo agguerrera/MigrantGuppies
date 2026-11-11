@@ -18,10 +18,6 @@ Geographic Location(s) of data collection: Northern Range Mountains, Trinidad
 
 Funding sources: This work was supported by the Lewis and Clark Grant Fund for Exploration and Field Research (2023), the Animal Behavior Society Student Research Grant (2023), a National Science Foundation Grant DEB-2410082 to AGG, DEB-2409901 awarded to MPH, and DEB 1740466 to K. Hughes (Florida State University, USA).
 
-## ACCESS INFORMATION
-Licenses/restrictions placed on the data or code
-CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-
 ## REPRODUCING ANALYSES
 All analyses were conducted in R. The repository contains the R scripts, input datasets, and RStudio project file required to reproduce analyses and figures presented in the manuscript. 
 
@@ -142,18 +138,22 @@ This data repository consist of six data files, four R scripts, an RStudio proje
 
 ### Code script description
 1. 01_color_dapc_mantel.R: 
-          - R script used to run Discriminant Analysis of Principal Components, PERMANOVAs, and Mantel tests. This code also calculates the proportion of orange and black coloration present on each male. Input files needed to run code: rgb_uv_pool5DT1PR.csv and xy5DT1PR.csv. 
+R script used to run Discriminant Analysis of Principal Components, PERMANOVAs, and Mantel tests. This code also calculates the proportion of orange and black coloration present on each male. Input files needed to run code: rgb_uv_pool5DT1PR.csv and xy5DT1PR.csv. 
     
 3. 02_color_variance.R: 
-          - R script used to compute color pattern variance in all three sampled tributaries based on the trace of the covariance matrix. Input file needed to run code: rgb_uv_pool5DT1PR.csv. 
+R script used to compute color pattern variance in all three sampled tributaries based on the trace of the covariance matrix. Input file needed to run code: rgb_uv_pool5DT1PR.csv. 
     
 5. 03_color_rarity_calculation.R:
-     R script used to calculate trial- and pool-level rarity metrics. Trial rarity is calculated based on the Euclidean distance to the trial centroid (mean). Trial centroid includes color pattern vectors of all experimental males). Pool rarity is calculated based on the Euclidean distance to the mean focal pool centroid. Pool centroid includes color pattern vectors of all males found in natural pool, but excludes migrant males used in corresponding trials). Migrant male pool rarity scores are calculated separately by adding each individual migrant's color vector to the color matrix of the focal resident pool. This avoids migrant males tested with individuals from the same focal pool being included in the pool mean. Input files required: rgb_uv_pool5DT1PR.csv and pool_info.csv
+R script used to calculate trial- and pool-level rarity metrics. Trial rarity is calculated based on the Euclidean distance to the trial centroid (mean). Trial centroid includes color pattern vectors of all experimental males). Pool rarity is calculated based on the Euclidean distance to the mean focal pool centroid. Pool centroid includes color pattern vectors of all males found in natural pool, but excludes migrant males used in corresponding trials). Migrant male pool rarity scores are calculated separately by adding each individual migrant's color vector to the color matrix of the focal resident pool. This avoids migrant males tested with individuals from the same focal pool being included in the pool mean. Input files required: rgb_uv_pool5DT1PR.csv and pool_info.csv
         
 6. 04_statistics.R
-     R script used to compute all statistics. Four models are assessed: (1) female interest model with categorical predictor of male type (resident common, resident rare, migrant unfamiliar), (2) female interest with categorical predictor of migrant status (migrant, resident) and continuous predictor of trial-level rarity metrics, (3) female interest with categorical predictor of migrant status (migrant, resident) and continuous predictor of pool-level rarity metrics, and (4) male-male competition model with categorical predictor of male type. Input files required: combined_rarity.csv, focal_behaviors.csv, annotated_behaviors.csv
+R script used to compute all statistics. Four models are assessed: (1) female interest model with categorical predictor of male type (resident common, resident rare, migrant unfamiliar), (2) female interest with categorical predictor of migrant status (migrant, resident) and continuous predictor of trial-level rarity metrics, (3) female interest with categorical predictor of migrant status (migrant, resident) and continuous predictor of pool-level rarity metrics, and (4) male-male competition model with categorical predictor of male type. Input files required: combined_rarity.csv, focal_behaviors.csv, annotated_behaviors.csv
    
 ## SOFTWARE VERSIONS
   R version 4.5.1 (2025-06-13)
   R Studio Version 2025.05.1+513 (2025.05.1+513)
+
+## ACCESS INFORMATION
+Licenses/restrictions placed on the data or code
+CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
