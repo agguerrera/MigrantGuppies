@@ -1,1 +1,175 @@
 # MigrantGuppies
+
+GENERAL INFORMATION
+This README.txt file was updated on 11/9/2026 
+A. Paper associated with this archive
+Citation: This work is under review at the American Naturalist. 
+Title: Geographic differences in color pattern and female interest provide an advantage for wild migrant male guppies (Poecilia reticulata)
+
+Brief abstract: Understanding the maintenance of genetic variation in wild populations is challenging because the evolutionary processes that shape variation do not act independently. Negative frequency-dependent selection (NFDS), in which rare genotypes have a fitness advantage over common genotypes, can maintain high levels of heritable trait variation. One potential outcome of NFDS is an increase in the effective migration rate, as migrants often carry rare phenotypes that may be favored in new environments. The ecological mechanisms underlying a “rare migrant advantage” are largely unknown. Using Trinidadian guppies (Poecilia reticulata), we evaluated whether migrant males are likely to exhibit unfamiliar phenotypes and whether they gain behavioral advantages during post-dispersal mating interactions. We quantified geographic variation in whole-color patterns of 566 wild male guppies and paired these data with behavioral assays to measure female interest in migrant males with unfamiliar color patterns. Male color patterns differed over small geographic spatial scales, and females were more interested in migrant males compared to resident males. However, female interest did not increase with quantitative color pattern rarity. Our findings highlight a potential migrant-associated advantage consistent with NFDS, while revealing that the traits underlying this advantage may be more complex than quantitative color pattern rarity alone. 
+
+B. Originators
+This work is under review at the American Naturalist. 
+
+C. Contact information
+This work is under review at the American Naturalist. 
+
+D. Dates of data collection
+February- March 2023
+
+E. Geographic Location(s) of data collection
+Northern Range Mountains, Trinidad
+
+F. Funding Sources
+This work is under review at the American Naturalist. 
+
+ACCESS INFORMATION
+1. Licenses/restrictions placed on the data or code
+CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+
+2. Data derived from other sources
+NA
+
+3. Recommended citation for this data/code archive
+This work is under review at the American Naturalist. 
+
+
+DATA & CODE FILE OVERVIEW
+This data repository consist of 6 data files, 4 code scripts, and this README document, with the following data and code filenames and variables
+Data files and variables
+
+1. rgb_uv_pool5DT1PR.csv
+          ID: Unique male identifier
+          StreamLetter: Unique stream and pool identifier
+          PhotoID: Full photo ID
+          Stream: Sampled stream 
+          Pool: Sampled pool
+          PoolStream: Sampled stream and pool combined identifier
+          PoolLetter: Unique stream and pool combined identifier
+          Trial: Identifies whether a male was used in the behavioral experiment (yes/no)
+          rgb_uv_interior...n: individual red, green, blue, and uv color values across homologous samplings points
+
+2. xy5DT1PR.csv
+        point: homologous sampling point identifier
+        x: x-coordinate location of point
+        y: y-coordinate location of point
+
+3. pool_info.csv
+        trial: trial number
+        ID: unique male identifier
+        male_id: trial and male type identifier
+        type: male type identifier (MU, RC1, RC2, or RR)
+        male_type: common, rare, or migrant identifier
+        mig_res: migrant or resident identifier
+        order: order in which trial was completed
+        time_of_day: time trial was started
+        female_id: unique female identifier
+        focal: order in which male was observed within a trial
+        sl: standard length (mm)
+        pool_no: natural pool male was sampled from
+        male_pool_letter: unique pool identifier
+        female_pool_letter: natural pool focal females were sampled from
+        up_down: whether the migrant originated from an upstream (U) or downstream (D) neighboring pool
+        stream: sampled tributary 
+        male_pool: pool and stream identifier where male was sampled from
+        female_pool: pool and stream identifier where focal females were sampled from
+
+4. combined_rarity.csv
+        Trial: trial number
+        ID: unique male identifier
+        male_id: trial and male type identifier
+        type: male type identifier (MU, RC1, RC2, or RR)
+        male_type: common, rare, or migrant identifier
+        mig_res: migrant or resident identifier
+        order: order in which trial was completed
+        time_of_day: time trial was started
+        female_id: unique female identifier
+        focal: order in which male was observed within a trial
+        sl: standard length (mm)
+        pool_no: natural pool male was sampled from
+        male_pool_letter: unique pool identifier
+        female_pool_letter: natural pool focal females were sampled from
+        up_down: whether the migrant originated from an upstream (U) or downstream (D) neighboring pool
+        stream: sampled tributary 
+        male_pool: pool and stream identifier where male was sampled from
+        female_pool: pool and stream identifier where focal females were sampled from
+        RecipientPool: focal pool used for the trial
+        TrialRarity: male color pattern rarity based on Euclidean distance from the trial centroid (mean color pattern of all trial males)
+        PoolRarity: male color pattern rarity based on Euclidean distance from the pool centroid (mean color pattern of all males in the focal pool)
+
+6. focal_behaviors.csv
+        ID: unique male identifier
+        Trial: trial number
+        focal: order in which male was observed within a trial 
+        toward: female moves toward focal male
+        orients: female turns body toward focal male
+        follows_fem: total time male spent following focal female
+        focal_comp_follows: time focal male spent following the same female as a rival (initiated by focal male)
+        comp_follows: total time focal male spent following the same female as a rival (initiated by focal or rival)
+        rival_comp_follows: time rival male spent following the same female as the focal male
+        sigmoids_alone: focal male sigmoids to female without other males present
+        sigmoids_comp: focal male sigmoids to the same female being followed by a rival male
+        interrupts_dur: total time focal male spends interrupting rival males
+        interrupts_no: number of time focal male interrupts rival males
+        TotalOr: proportion of orange coloration
+        uv_sum: amount of UV reflectance 
+        TotalBlk: proportion of black coloration
+        Orient_Response_to_Sigmoid: female orients toward focal male following a male sigmoid
+        Orient_to_Active_Follow: female orients toward focal male who is actively following
+        Sigmoid: total male sigmoids
+        Female_Approach_While_Following: female moves towards male that was actively pursuing
+        Orient_to_No_Follow: female orients toward male that was not actively pursuing
+        Female_Approach_No_Follow: female moves toward male that was not actively pursuing
+        Approach_Response_to_Sigmoid: female moves toward male that was actively performing a sigmoid display
+
+7. annotated-behaviors.csv
+        trial: trial number
+        focal: focal male identifier based on order observed in trial
+        behavior: male or female behavior performed
+        modifier: which rival male the behavior was toward or received from
+        time: time in trial behavior occured
+        status: whether behavior was a point or duration behavior
+        follow_stop_time: the time in which a male last stopped pursuing a female 
+        male_following: whether the behavior occured while a male was actively following a focal female
+        time_since_follow: the amount of time passed since following stopped and behavior occured 
+
+Code scripts and workflow
+  *R scripts can be run in any order, as long as the appropriate files are read in
+
+1. 01_color_dapc_mantel.R: 
+     R script used to run Discriminant Analysis of Principal Components, PERMANOVAs, and Mantel tests.
+     This code also calculates the proportion of orange and black coloration present on each male.
+     Input files needed to run code: rgb_uv_pool5DT1PR.csv and xy5DT1PR.csv. 
+    
+2. 02_color_variance.R: 
+     R script used to compute color pattern variance in all three sampled tributaries based on
+     the trace of the covariance matrix.
+     Input file needed to run code: rgb_uv_pool5DT1PR.csv. 
+    
+3. 03_color_rarity_calculation.R:
+     R script used to calculate trial- and pool-level rarity metrics.
+     Trial rarity is calculated based on the Euclidean distance to the trial centroid (mean).
+     Trial centroid includes color pattern vectors of all experimental males).
+     Pool rarity is calculated based on the Euclidean distance to the mean focal pool centroid.
+     Pool centroid includes color pattern vectors of all males found in natural pool,
+     but excludes migrant males used in corresponding trials). Migrant male pool rarity scores are
+     calculated separately by adding each individual migrant's color vector to the color matrix of the
+     focal resident pool. This avoids migrant males tested with individuals from the same focal pool
+     being included in the pool mean.
+     Input files required: rgb_uv_pool5DT1PR.csv and pool_info.csv
+        
+4. 04_statistics.R
+     R script used to compute all statistics. Four models are assessed:
+     (1) female interest model with categorical predictor of male type (resident common, resident rare,
+     migrant unfamiliar),
+     (2) female interest with categorical predictor of migrant status (migrant, resident) and continuous
+     predictor of trial-level rarity metrics,
+     (3) female interest with categorical predictor of migrant status (migrant, resident) and continuous
+     predictor of pool-level rarity metrics, and
+     (4) male-male competition model with categorical predictor of male type.
+     Input files required: combined_rarity.csv, focal_behaviors.csv, annotated_behaviors.csv
+   
+SOFTWARE VERSIONS
+  R version 4.5.1 (2025-06-13)
+  R Studio Version 2025.05.1+513 (2025.05.1+513)
+
