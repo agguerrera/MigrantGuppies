@@ -19,7 +19,7 @@ Geographic Location(s) of data collection: Northern Range Mountains, Trinidad
 Funding sources: This work was supported by the Lewis and Clark Grant Fund for Exploration and Field Research (2023), the Animal Behavior Society Student Research Grant (2023), a National Science Foundation Grant DEB-2410082 to AGG, DEB-2409901 awarded to MPH, and DEB 1740466 to K. Hughes (Florida State University, USA).
 
 ## REPRODUCING ANALYSES
-All analyses were conducted in R. The repository contains the R scripts, input datasets, and RStudio project file required to reproduce analyses and figures presented in the manuscript. 
+All analyses were conducted in RStudio. The repository contains the R scripts, input datasets, and RStudio project file required to reproduce analyses and figures presented in the manuscript. 
 
 ### Getting started
 
