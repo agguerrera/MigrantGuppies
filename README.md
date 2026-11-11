@@ -99,7 +99,8 @@ Data files and variables
         PoolRarity: male color pattern rarity based on Euclidean distance from the pool centroid (mean color pattern of all males in the focal pool)
 
 6. focal_behaviors.csv
-        ID: unique male identifier
+        unqiue_id: numerical unique male identifier
+        ID: unique male identifier based on photo file name
         Trial: trial number
         focal: order in which male was observed within a trial 
         toward: female moves toward focal male
@@ -123,7 +124,7 @@ Data files and variables
         Female_Approach_No_Follow: female moves toward male that was not actively pursuing
         Approach_Response_to_Sigmoid: female moves toward male that was actively performing a sigmoid display
 
-7. annotated-behaviors.csv
+8. annotated-behaviors.csv
         trial: trial number
         focal: focal male identifier based on order observed in trial
         behavior: male or female behavior performed
